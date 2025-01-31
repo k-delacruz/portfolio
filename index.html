@@ -23,6 +23,7 @@
         header {
             background-color: #1f1f1f;
             padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
         }
         nav ul {
             list-style: none;
@@ -36,6 +37,10 @@
             color: #ffffff;
             text-decoration: none;
             font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #1E90FF;
         }
         .section {
             padding: 50px 0;
@@ -46,16 +51,25 @@
         }
         .skills-list li {
             background: #333;
-            padding: 10px;
-            margin: 5px;
+            padding: 15px;
+            margin: 10px;
             display: inline-block;
-            border-radius: 5px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .skills-list li:hover {
+            background: #1E90FF;
         }
         .project {
             background: #222;
             padding: 20px;
             margin: 20px 0;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
         }
         footer {
             background-color: #1f1f1f;
@@ -83,40 +97,45 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm an IT Support Technician with experience in networking, troubleshooting, and POS system repair. I'm passionate about transitioning into a Network Engineer role, leveraging my CCNA certification and hands-on experience.</p>
+            <p>I'm an IT Support Technician with experience in networking, troubleshooting, and POS system repair. Passionate about transitioning into a Network Engineer role, leveraging my CCNA certification and hands-on experience.</p>
         </div>
     </section>
     
     <section id="skills" class="section">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
             <ul class="skills-list">
                 <li>Network Configuration (CCNA Certified)</li>
                 <li>IT Support & Troubleshooting</li>
                 <li>POS System Repair & Maintenance</li>
                 <li>Windows & Linux Administration</li>
                 <li>Cloud Computing Basics (AWS, Azure)</li>
+                <li>Cybersecurity Fundamentals</li>
             </ul>
         </div>
     </section>
     
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="project">
-                <h3>Network Setup for Small Business</h3>
-                <p>Designed and implemented a secure network for a local business, optimizing performance and security.</p>
+                <h3>Enterprise Network Design</h3>
+                <p>Designed a scalable network for a mid-sized enterprise, enhancing security and efficiency.</p>
             </div>
             <div class="project">
                 <h3>POS System Upgrade</h3>
                 <p>Upgraded POS systems for a retail chain, improving transaction speed and reliability.</p>
+            </div>
+            <div class="project">
+                <h3>Cloud Migration</h3>
+                <p>Assisted in migrating on-prem infrastructure to AWS, reducing costs and improving reliability.</p>
             </div>
         </div>
     </section>
     
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
             <p>Email: <a href="mailto:your.email@example.com" style="color:#1E90FF;">delacruzkenneth135@gmail.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank" style="color:#1E90FF;">www.linkedin.com/in/kenneth-de-la-cruz-88ab02315</a></p>
            <!-- <p>GitHub: <a href="https://github.com/yourusername" target="_blank" style="color:#1E90FF;">github.com/yourusername</a></p> -->
